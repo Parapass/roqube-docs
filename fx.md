@@ -45,3 +45,5 @@ Please note: The `"_ColorCorrection" : {` is REQURED. Your event will not work w
 - _FT: Fade Time, useful for creating short-burst effects or a slow fade-out on a long effect. Duration should not be used if creating a short-burst effect.
 - _ES: Ease In, leave as "nil" and it will default to Linear. Easing documentation available at https://easings.net/
 - _ED: Ease Out, leave as "nil" and it will default to Linear. Easing documentation available at https://easings.net/
+
+To create this type of event in ChroMapper, press Ctrl+Shift+T and a large text box should appear. Type in `_ColorCorrection` and press "Submit. You will then be able to place FX events on the right side of the editor and modify them. 
