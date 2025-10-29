@@ -33,13 +33,15 @@ Below is a sample event taken from Professional Vengeance:
 - B: Beat: Time in beats
 - T: Type: Type of event, should always be "_ColorCorrection" for Color Correction events
 - D: Data
-  - "_ColorCorrection": { - **THIS IS REQUIRED!!! OTHERWISE YOUR EVENT WILL NOT WORK**
-    - BN: Brightness
-    - CT: Contrast
-    - ST: Saturation
-    - TC: Tint Color
-      - R, G, B: Red, Green, and Blue. Recommended to just leave these at 255 unless otherwise needed
-    - _D: Duration, useful for creating long effects that last more than 5 or so seconds
-    - _FT: Fade Time, useful for creating short-burst effects or a slow fade-out on a long effect. Duration should not be used if creating a short-burst effect.
-    - _ES: Ease In, leave as "nil" and it will default to Linear. Easing documentation available at https://easings.net/
-    - _ED: Ease Out, leave as "nil" and it will default to Linear. Easing documentation available at https://easings.net/
+
+Please note: The `"_ColorCorrection" : {` is REQURED. Your event will not work without it.
+
+- BN: Brightness
+- CT: Contrast
+- ST: Saturation
+- TC: Tint Color
+  - R, G, B: Red, Green, and Blue. Recommended to just leave these at 255 unless otherwise needed
+- _D: Duration, useful for creating long effects that last more than 5 or so seconds
+- _FT: Fade Time, useful for creating short-burst effects or a slow fade-out on a long effect. Duration should not be used if creating a short-burst effect.
+- _ES: Ease In, leave as "nil" and it will default to Linear. Easing documentation available at https://easings.net/
+- _ED: Ease Out, leave as "nil" and it will default to Linear. Easing documentation available at https://easings.net/
