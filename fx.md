@@ -1,12 +1,14 @@
 # FX Events
+
+- Last updated: October 29, 2025
+
 FX (also known as Color Correction) events are events you can use to change environment lighting during a song. There are multiple different properties you can use to control these effects.
----
 At the moment, these effects can ONLY be used on VR maps, so this will not work on a Mania map or map made in the osu! editor.
----
 All color correction values are based off the values in Roblox Studio. Mess around with a ColorCorrectionEffect inside a Studio baseplate if you want a clear visual of the effect you're creating.
 
 Below is a sample event taken from Professional Vengeance:
-`{
+```json
+{
   "b" : 40.922,
   "t" : "_ColorCorrection",
   "d" : {
@@ -25,7 +27,8 @@ Below is a sample event taken from Professional Vengeance:
       "_ed" : "nil"
     }
   }
-}`
+}
+```
 
 - B: Beat: Time in beats
 - T: Type: Type of event, should always be "_ColorCorrection" for Color Correction events
