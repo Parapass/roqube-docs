@@ -1,14 +1,14 @@
-# Color Correction Documentation
+# Color Correction Documentation \ FX Events
 
-b = Beat (time)
-t = Type (Type of event) [_ColorCorrection]
-d = {} (Table including the events data)
+- b = Beat (time)
+- t = Type (Type of event) [_ColorCorrection]
+- d = {} (Table including the events data)
 
 ## Color Correction default values
-Brightness = 0,
-Contrast = 0.175,
-Saturation = 1,
-TintColor = Color3.fromRGB(255, 255, 255)
+- Brightness = 0,
+- Contrast = 0.175,
+- Saturation = 1,
+- TintColor = Color3.fromRGB(255, 255, 255)
 
 
 # Properties
