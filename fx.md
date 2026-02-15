@@ -12,11 +12,11 @@ TintColor = Color3.fromRGB(255, 255, 255)
 
 
 # Properties
-d.Duration = Number (length in beats) [0 for a instant event] [0 to 1 (clamped)]
-d.Brightness = Number or Array [[BrightnessValue : Number, PercentageCompleted : Number, Easing : string]]
-d.Contrast   = Number or Array [[ContrastValue   : Number, PercentageCompleted : Number, Easing : string]]
-d.Saturation = Number or Array [[SaturationValue : Number, PercentageCompleted : Number, Easing : string]]
-d.TintColor  = Array [[R : Number, G : Number, B : Number, PercentageCompleted : Number, Easing : string]]
+- d.Duration = Number (length in beats) [0 for a instant event] [0 to 1 (clamped)]
+- d.Brightness = Number or Array [[BrightnessValue : Number, PercentageCompleted : Number, Easing : string]]
+- d.Contrast   = Number or Array [[ContrastValue   : Number, PercentageCompleted : Number, Easing : string]]
+- d.Saturation = Number or Array [[SaturationValue : Number, PercentageCompleted : Number, Easing : string]]
+- d.TintColor  = Array [[R : Number, G : Number, B : Number, PercentageCompleted : Number, Easing : string]]
 
 Note when editing properties:
 - when using arrays, percentage completeted is start beat to end beat (b + Duration)
