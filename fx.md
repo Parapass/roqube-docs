@@ -1,49 +1,43 @@
-# FX Events
+# Color Correction Documentation
 
-**Last updated: October 29, 2025**
+b = Beat (time)
+t = Type (Type of event) [_ColorCorrection]
+d = {} (Table including the events data)
 
-- FX (also known as Color Correction) events are events you can use to change environment lighting during a song. There are multiple different properties you can use to control these effects.
-- At the moment, these effects can only be added to Classic maps.
-- All color correction values are based off the values in Roblox Studio. Mess around with a ColorCorrectionEffect inside a Studio baseplate if you want a clear visual of the effect you're creating.
+## Color Correction default values
+Brightness = 0,
+Contrast = 0.175,
+Saturation = 1,
+TintColor = Color3.fromRGB(255, 255, 255)
 
-Below is a sample event taken from Professional Vengeance:
-```json
-{
-  "b" : 40.922,
+
+# Properties
+d.Duration = Number (length in beats) [0 for a instant event] [0 to 1 (clamped)]
+d.Brightness = Number or Array [[BrightnessValue : Number, PercentageCompleted : Number, Easing : string]]
+d.Contrast   = Number or Array [[ContrastValue   : Number, PercentageCompleted : Number, Easing : string]]
+d.Saturation = Number or Array [[SaturationValue : Number, PercentageCompleted : Number, Easing : string]]
+d.TintColor  = Array [[R : Number, G : Number, B : Number, PercentageCompleted : Number, Easing : string]]
+
+Note when editing properties:
+- when using arrays, percentage completeted is start beat to end beat (b + Duration)
+- You do not always need to include a property, if you plan to only change the Contrast property then only include Contrast
+- To reset back to the default value, Ex: d.Brightness = "DV"
+- For easings, Check the easing documentation
+
+-- Example taken from Comment te dire --
+
+ ```{
+  "b" : 1.25,
   "t" : "_ColorCorrection",
   "d" : {
-    "_ColorCorrection" : {
-      "bn" : 0,
-      "ct" : 5,
-      "st" : -2,
-      "tc" : {
-        "r" : 255,
-        "g" : 255,
-        "b" : 255
-      },
-      "_d" : 0,
-      "_ft" : 0.5,
-      "_es" : "nil",
-      "_ed" : "nil"
-    }
+    "Duration" : 39.75, -- duration in beats
+    "Saturation" : [
+      [ -0.6, 0 ],
+      [ "DV", 1, "easeInExpo" ]
+    ],
+    
+    "Brightness" : "DV"
   }
-}
-```
+},```
 
-- B: Beat: Time in beats
-- T: Type: Type of event, should always be "_ColorCorrection" for Color Correction events
-- D: Data
-
-Please note: The `"_ColorCorrection" : {` is REQURED. Your event will not work without it.
-
-- BN: Brightness
-- CT: Contrast
-- ST: Saturation
-- TC: Tint Color
-  - R, G, B: Red, Green, and Blue. Recommended to just leave these at 255 unless otherwise needed
-- _D: Duration, useful for creating long effects that last more than 5 or so seconds
-- _FT: Fade Time, useful for creating short-burst effects or a slow fade-out on a long effect. Duration should not be used if creating a short-burst effect.
-- _ES: Ease In, leave as "nil" and it will default to Linear. Easing documentation available at https://easings.net/
-- _ED: Ease Out, leave as "nil" and it will default to Linear. Easing documentation available at https://easings.net/
-
-To create this type of event in ChroMapper, press Ctrl+Shift+T and a large text box should appear. Type in `_ColorCorrection` and press "Submit". You will then be able to place FX events on the right side of the editor and modify them. 
+Documentation of the actual object can be found here: https://create.roblox.com/docs/reference/engine/classes/ColorCorrectionEffect
