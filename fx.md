@@ -38,6 +38,6 @@ Note when editing properties:
     
     "Brightness" : "DV"
   }
-},```
-
+},
+```
 Documentation of the actual object can be found here: https://create.roblox.com/docs/reference/engine/classes/ColorCorrectionEffect
