@@ -19,10 +19,10 @@
 - d.TintColor  = Array [[R : Number, G : Number, B : Number, PercentageCompleted : Number, Easing : string]]
 
 Note when editing properties:
-- when using arrays, percentage completeted is start beat to end beat (b + Duration)
-- You do not always need to include a property, if you plan to only change the Contrast property then only include Contrast
-- To reset back to the default value, Ex: d.Brightness = "DV"
-- For easings, Check the easing documentation
+- When using arrays, percentage completeted is start beat to end beat (b + Duration)
+- You do not always need to include a property. If you plan to only change the Contrast property, then only include Contrast
+- To reset back to the default value, set the text to "DV" exactly. Example: d.Brightness = "DV"
+- For easings, check the easing documentation or easings.net
 
 ### Example taken from Comment te dire
 
