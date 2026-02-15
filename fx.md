@@ -24,7 +24,7 @@ Note when editing properties:
 - To reset back to the default value, Ex: d.Brightness = "DV"
 - For easings, Check the easing documentation
 
--- Example taken from Comment te dire --
+### Example taken from Comment te dire
 
  ```{
   "b" : 1.25,
