@@ -26,7 +26,8 @@ Note when editing properties:
 
 ### Example taken from Comment te dire
 
- ```{
+ ```
+{
   "b" : 1.25,
   "t" : "_ColorCorrection",
   "d" : {
@@ -38,6 +39,6 @@ Note when editing properties:
     
     "Brightness" : "DV"
   }
-},
+}
 ```
 Documentation of the actual object can be found here: https://create.roblox.com/docs/reference/engine/classes/ColorCorrectionEffect
