@@ -59,3 +59,23 @@ Anchors a note to the right note lane. Most commonly used with the right column 
 - `0,1` - Bottom left corner
 - `1,1` - Bottom right corner
 - `0.5,0.5` - Center of anchor (Default anchor when IAnchor is blank)
+  
+---
+
+### To position a UIElement in between two [Dynamic Anchors](#dynamic-anchor-types)
+
+To position a UIElement in between two [Dynamic Anchors](#dynamic-anchor-types), you must use two ``or more`` [Dynamic Anchors](#dynamic-anchor-types) seperated by '|'
+
+**Example:** `NIndex0;X,Y;0.5,0.5|NIndex3;X,Y;0.5,0.5` - The UI will be anchored in between the Left and Right receptor
+
+ ---
+ 
+# Dynamic Sizing (Image UIElement **only**)
+
+Dynamic sizing can be used to size an object in between two [Dynamic Anchors](#dynamic-anchor-types)
+
+---
+
+**Example:** `NIndex0;X;0.5,0.5|NIndex3;X;0.5,0.5` - The UI will be sized in between the Left and Right receptor on the X axis
+
+**Note:** Size is normalized so it can never be negative
