@@ -2,6 +2,7 @@
 
 these are the difficulty names you might want to refer to when setting a difficulty name 
 > Not to be confused with the difficulty display name
+**Note:** You dont always have to follow this exactly, its just a suggestion!
 
 --- 
 
