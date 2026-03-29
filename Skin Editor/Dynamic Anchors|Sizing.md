@@ -6,7 +6,7 @@ Anchors can be used to keep an object origin where specified, though you may als
 
 ## How to Set a Dynamic Anchor in a UIElement
 
-To set a Dynamic Anchor, select the UIElement you want to set it for then go to **Edit Properties -> Dynamic Anchor -> Then type any [Dynamic Anchor](#dynamic-anchor-types)**
+To set a Dynamic Anchor, select the UIElement you want to set it for then go to **Edit Properties -> Dynamic Anchor -> then type any [Dynamic Anchor](#dynamic-anchor-types)**
 
 ---
 
