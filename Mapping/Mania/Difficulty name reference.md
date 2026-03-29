@@ -1,9 +1,8 @@
 ## Trying to name a difficulty in your map?
 
-these are the difficulty names you might want to refer to when setting a difficulty name 
-> Not to be confused with the difficulty display name
+These are the difficulty names you might want to refer to when setting a difficulty name  (Not to be confused with the difficulty display name)
 
-**Note:** You dont always have to follow this, its just a suggestion!
+**Note: You don't always have to follow this, it's just a suggestion**
 
 --- 
 
