@@ -1,3 +1,3 @@
-- **`EndsAt`** — Time (in milliseconds) at which the map will end.
-- **`FadeOutEnd`** — Fades out during the 1500ms wait at the end of a song.
-- **`IntroEnabled`** — Whether the map has a 3000ms intro, for maps designed to start immediately. May cause minor visual issues.
+- **`EndsAt`** ; Time (in milliseconds) at which the map will end.
+- **`FadeOutEnd`** ; Fades out during the 1500ms wait at the end of a song.
+- **`IntroEnabled`** ; Whether the map has a 3000ms intro, for maps designed to start immediately. May cause minor visual issues.
