@@ -1,5 +1,5 @@
 - `StartsAt` ; Time (in milliseconds) at which the map will start.
 - `EndsAt` ; Time (in milliseconds) at which the map will end.
 - `FadeOutEnd` ; Fades out during the 1500ms wait at the end of a song.
-- `FadeInStart` ; Fades the song in.
+- `FadeInStart` ; Fades the song in (only applies if the map does not have `IntroEnabled` set to true.
 - `IntroEnabled` ; Whether the map has a 3000ms intro, for maps designed to start immediately. May cause minor visual issues.
